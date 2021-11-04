@@ -12,7 +12,7 @@ I deployed the website on AWS. It runs on EC2 instances as part of an auto scali
 | Resources               | AND       | Purpose                  |
 |-------------------------|:---------:| ------------------------:|                
 |IAM                      | For       | Assigning Roles          |
-|SSM                      | For       | AWS Session Manageement  |
+|SSM                      | For       | AWS Session Management   |
 |Auto-scaling Group       | For       | App scaling              |
 |IGW, Nacl, Security Group| For       | Internet Traffic Control |
 |Cloudwatch               | For       | Collecting Logs          |
