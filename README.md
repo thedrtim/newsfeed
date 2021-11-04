@@ -17,7 +17,9 @@ I deployed the website on AWS. It runs on EC2 instances as part of an auto scali
 |IGW, Nacl, Security Group| For       | Internet Traffic Control |
 |Cloudwatch               | For       | Collecting Logs          |
 | S3 Bucket               | For       | Storing Logs             |
-|Lambda                   | For       | Triggering Log collection|
+|Lambda                   | For       | Processing Data          |
+|Eventbridge              | For       | Triggering Log collection|
+
 
 
 ### ![VPC Infrastructure Architecture!](newsfeed.jpg)
