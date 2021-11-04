@@ -7,7 +7,7 @@ Hey! I forked this newsfeed website from a friend. He built the fullstack websit
 There is also an authentication feature that allows users to sign up and saves user's data to an sqlite database.
 
 # My Actual Job: DEPLOYMENT
-I deployed the website on AWS. It runs on EC2 instances as part of an auto scaling group. Here is the URL (will be taken down soon) [link](ec2-3-14-217-50.us-east-2.compute.amazonaws.com). Now let's look at the table first and thereafter take a high level overview of our infrastructure architecture diagram.
+I deployed the website on AWS. It runs on EC2 instances as part of an auto scaling group. Here is the URL (will be taken down soon) [link](http://news-feed-load-balancer-49b43ec3921a6792.elb.us-east-2.amazonaws.com/). Now let's look at the table first and thereafter take a high level overview of our infrastructure architecture diagram.
 
 | Resources               | AND       | Purpose                  |
 |-------------------------|:---------:| ------------------------:|                
