@@ -7,12 +7,12 @@ Hey! I forked this newsfeed website from a friend. He built the fullstack websit
 There is also an authentication feature that allows users to sign up and saves user's data to an sqlite database.
 
 # My Actual Job: DEPLOYMENT
-TI deployed the website on AWS. It runs on EC2 instances as part of an auto scaling group. Here is the URL (will be taken down soon) [link](ec2-3-14-217-50.us-east-2.compute.amazonaws.com). Now let's take a high level overview of our infrastructure architecture diagram.
+I deployed the website on AWS. It runs on EC2 instances as part of an auto scaling group. Here is the URL (will be taken down soon) [link](ec2-3-14-217-50.us-east-2.compute.amazonaws.com). Now let's take a high level overview of our infrastructure architecture diagram.
 
 | Resources               | AND       | Purpose                  |
 |-------------------------|:---------:| ------------------------:|                
 |IAM                      | For       | Assigning Roles          |
-|SSM                      | For       | AWS Session Manager      |
+|SSM                      | For       | AWS Session Manageement  |
 |Auto-scaling Group       | For       | App scaling              |
 |IGW, Nacl, Security Group| For       | Internet Traffic Control |
 |Cloudwatch               | For       | Collecting Logs          |
@@ -21,7 +21,7 @@ TI deployed the website on AWS. It runs on EC2 instances as part of an auto scal
 
 
 ![VPC Architecture!](newsfeed.jpg)
-I setup a VPC in my AWS account with 2 subnets. Also ttached an internet gateway and setup route tables to route traffic within the VPC. Then created an auto-scaling group that spans multiple availability zones. The whole point of the auto-scaling group is to ensure that our app scales as needed in response to the load on the servers. 
+I setup a VPC in my AWS account with 2 subnets. Also attached an internet gateway and setup route tables to route traffic within the VPC. Then I created an auto-scaling group that spans multiple availability zones. The whole point of the auto-scaling group is to ensure that our app scales as needed in response to the load on the servers. 
 
-And, oh yeah...I attached a Network Load balancer. You can refer to the image above for clarification.
+And, oh yeah, in order to balance load across instances...I attached a Network Load balancer. You can refer to the image above for clarification.
 
