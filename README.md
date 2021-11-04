@@ -1,10 +1,17 @@
-# Team Project
-
-## Project: DEPLOY A WEB APP TO THE CLOUD
+# Project: DEPLOY A WEB APP TO THE CLOUD
 
 ## Cloud Platform: AWS
 
-### Resources: [IAM, SSM, Internet Gateway, Security Group, Auto-scaling Group, NACL, Lambda Function, Cloudwatch, S3 Bucket]
+| Resources               | AND       | Purpose                  |
+|-------------------------|:---------:| ------------------------:|                
+|IAM                      | For       | Assigning Roles          |
+|SSM                      | For       | AWS Session Manager      |
+|Auto-scaling Group       | For       | App scaling              |
+|IGW, Nacl, Security Group| For       | Internet Traffic Control |
+|Cloudwatch               | For       | Collecting Logs          |
+| S3 Bucket               | For       | Storing Logs             |
+|Lambda                   | For       | Triggering Log collection|
+
 
 # NewsFeed
 ![](images/newsfeed.png)
