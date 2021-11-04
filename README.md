@@ -28,3 +28,4 @@ I setup a VPC in my AWS account with 2 subnets. Also attached an internet gatewa
 
 And, oh yeah, in order to balance load across instances...I attached a Network Load balancer. You can refer to the image above for clarification.
 
+Finally, Logs were collected with Cloudwatch and saved in my pre-fedfined S3 Bucket.
