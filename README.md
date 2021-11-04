@@ -20,7 +20,8 @@ I deployed the website on AWS. It runs on EC2 instances as part of an auto scali
 |Lambda                   | For       | Triggering Log collection|
 
 
-![VPC Infrastructure Architecture!](newsfeed.jpg)
+### ![VPC Infrastructure Architecture!](newsfeed.jpg)
+
 I setup a VPC in my AWS account with 2 subnets. Also attached an internet gateway and setup route tables to route traffic within the VPC. Then I created an auto-scaling group that spans multiple availability zones. The whole point of the auto-scaling group is to ensure that our app scales as needed in response to the load on the servers. 
 
 And, oh yeah, in order to balance load across instances...I attached a Network Load balancer. You can refer to the image above for clarification.
