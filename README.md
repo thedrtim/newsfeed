@@ -3,10 +3,10 @@
 ![](images/newsfeed.png)
 
 # Introduction
-Hey! I forked this newsfeed website from a friend. He built the fullstack website that consumes news from a news API and shows the data in the frontend. He's quite smart, isn't he?😋.
+Hey! My friend, Utibe and I built this website. We built the fullstack website that consumes news from a news API and shows the data in the frontend.
 There is also an authentication feature that allows users to sign up and saves user's data to an sqlite database.
 
-# My Actual Job: DEPLOYMENT
+# THE DEPLOYMENT
 I deployed the website on AWS. It runs on EC2 instances as part of an auto scaling group. Here is the URL (will be taken down soon) [link](http://news-feed-load-balancer-49b43ec3921a6792.elb.us-east-2.amazonaws.com/). Now let's look at the table first and thereafter take a high level overview of our infrastructure architecture diagram.
 
 | Resources               | AND       | Purpose                  |
@@ -29,3 +29,6 @@ I setup a VPC in my AWS account with 2 subnets. Also attached an internet gatewa
 And, oh yeah, in order to balance load across instances...I attached a Network Load balancer. You can refer to the image above for clarification.
 
 Finally, Logs were collected with Cloudwatch and saved in my pre-defined S3 Bucket.
+
+
+# Project Owner - Timothy Bamiro
