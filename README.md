@@ -31,4 +31,4 @@ And, oh yeah, in order to balance load across instances...I attached a Network L
 Finally, Logs were collected with Cloudwatch and saved in my pre-defined S3 Bucket.
 
 
-# Project Owner - Timothy Bamiro
+# Project Owner - Timothy Bamiro, Utibe Umanah
